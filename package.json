@@ -1,6 +1,6 @@
 {
   "name": "vidrip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Quickly and easily download an entire channel on YouTube",
   "main": "app.js",
   "scripts": {
