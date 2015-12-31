@@ -1,6 +1,6 @@
 {
   "name": "vidrip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quickly and easily download an entire channel on YouTube",
   "main": "app.js",
   "scripts": {
@@ -16,8 +16,7 @@
   "license": "Unlicense",
   "dependencies": {
     "commander": "^2.9.0",
-    "sync-request": "^2.1.0",
-    "youtube-dl": "^1.10.5"
+    "sync-request": "^2.1.0"
   },
   "devDependencies": {},
   "repository": {
