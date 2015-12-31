@@ -1,4 +1,4 @@
-var youtubedl = require('youtube-dl');
+var youtubeStream = require('youtube-audio-stream')
 var fs = require('fs');
 var process = require('process');
 
@@ -10,13 +10,18 @@ module.exports = function(items) {
 
   items.forEach(function(item) {
     if(item.id.videoId != undefined) {
-      console.log(item.id.videoId);
-      var video = youtubedl('http://www.youtube.com/watch?v=' + item.id.videoId, ['--format=140']);
-
-      video.on('info', function(info) {
-        console.log('Downloading ', info._filename);
-        video.pipe(fs.createWriteStream(process.cwd() + '/vidrip/' + info._filename + '.m4a'));
-      });
+      console.log('Downloading: ' + item.snippet.title + ' (' + item.id.videoId + ')');
+      
+      getAudio(item.id.videoId, item)
     }
   });
+}
+
+var getAudio = function (videoId, item) {
+  var requestUrl = 'http://youtube.com/watch?v=' + videoId
+  try {
+    youtubeStream(requestUrl).pipe(fs.createWriteStream(process.cwd() + '/vidrip/' + item.snippet.title + '.mp3'));
+  } catch (exception) {
+    console.error(exception);
+  }
 }
