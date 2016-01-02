@@ -17,6 +17,10 @@
     "mp3"
   ],
   "author": "mhsjlw <mhsjlw@aol.com>",
+  "contributor": [{
+    "name": "Matthewacon",
+    "email": "matthewjbarichello@gmail.com"
+  }],
   "license": "Unlicense",
   "dependencies": {
     "commander": "^2.9.0",
@@ -27,10 +31,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhsjlw/vidrip.git"
+    "url": "git+https://github.com/Matthewacon/vidrip.git"
   },
   "bugs": {
-    "url": "https://github.com/mhsjlw/vidrip/issues"
+    "url": "https://github.com/Matthewacon/vidrip/issues"
   },
-  "homepage": "https://github.com/mhsjlw/vidrip#readme"
+  "homepage": "https://github.com/Matthew/vidrip#readme"
 }
