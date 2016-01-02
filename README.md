@@ -1,7 +1,7 @@
 vidrip
 ======
 
-Quickly and easily download an entire channel on YouTube in MP3 formatting
+Quickly and easily download an entire channel from YouTube in MP3 format
 
 ## Running / Installing
 It's easy, really
