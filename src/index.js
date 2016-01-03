@@ -35,7 +35,7 @@ module.exports.vidrip = function(channelId, apikey) {
   }
 
   if(totalResults - items.length > 1) {
-    console.log('I missed', totalResults - items.length, 'result(s). Are they private?');
+    console.log('Missed', totalResults - items.length, 'result(s). Are they private?');
   }
 
   downloader(items);
