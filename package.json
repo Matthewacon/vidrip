@@ -17,7 +17,7 @@
     "mp3"
   ],
   "author": "mhsjlw <mhsjlw@aol.com>",
-  "contributor": [
+  "contributors": [
     {
       "name": "Matthewacon",
       "email": "matthewjbarichello@gmail.com"
@@ -30,7 +30,6 @@
     "sync-request": "^2.1.0",
     "youtube-audio-stream": "0.0.16"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Matthewacon/vidrip.git"

@@ -21,7 +21,7 @@ program.parse(process.argv);
 if(program.key == undefined || program.channel == undefined) {
   console.log('Incorrent usage! Try --help');
 } else {
-  if(program.key == true || program.key == true) {
+  if(program.key == true) {
     console.log('Incorrent usage! Try --help');
   } else {
     vidrip(program.channel, program.key)
